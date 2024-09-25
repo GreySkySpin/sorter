@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Sorter Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="intro">
+            <h1>Welcome to the Item Sorter Game</h1>
+            <button id="startBtn">Start Sorting</button>
+        </div>
+        <div id="itemClassification" style="display: none;">
+            <h2>Classify Your Item</h2>
+            <p>Is your item small/multiple or large/important?</p>
+            <button id="smallBtn">Small/Multiple</button>
+            <button id="largeBtn">Large/Important</button>
+        </div>
+        <div id="questionnaire" style="display: none;">
+            <h2>Item Details</h2>
+            <input type="text" id="itemName" placeholder="Enter item name">
+            <div id="questions"></div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Result</h2>
+            <p id="resultText"></p>
+            <label for="actionSelect">Choose Action:</label>
+            <select id="actionSelect">
+                <option value="sell">Sell</option>
+                <option value="give away">Give Away</option>
+                <option value="repair">Repair</option>
+                <option value="recycle">Recycle</option>
+                <option value="keep">Keep</option>
+            </select>
+            <button id="saveBtn">Save Item</button>
+            <button id="resetBtn">Sort Another Item</button>
+        </div>
+        <div id="buttonContainer">
+			<button id="downloadBtn" style="display: none;">Download Inventory</button>
+			<div id="inventoryUpdatedMsg" style="display: none;">Inventory Updated</div>
+		</div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

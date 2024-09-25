@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#questions {
+    margin-top: 20px;
+}
+
+#buttonContainer {
+    position: relative; /* Make this container the reference for absolute positioning */
+    display: flex;
+    justify-content: center; /* Center the download button */
+    margin-top: 20px;
+}
+
+#downloadBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#inventoryUpdatedMsg {
+    display: none;
+    position: absolute; /* Position the message absolutely within the container */
+    left: calc(80%); /* Position it to the right of the button with some margin */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the message */
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: nowrap; /* Prevents the message from wrapping to a new line */
+}
